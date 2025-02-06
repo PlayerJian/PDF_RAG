@@ -17,8 +17,8 @@ ollama run deepseek:7b
 ```
 3. 运行rag_backend.py
 # 页面展示
-<img src="./doc/imgs/img1.png" alt="描述图片的文字" width="300" height="200">
-<img src="./doc/imgs/img2.png" alt="描述图片的文字" width="300" height="200">
+<img src="./doc/imgs/img1.png" alt="描述图片的文字" width="500" height="400">
+<img src="./doc/imgs/img2.png" alt="描述图片的文字" width="500" height="400">
 
 # 待优化
 1. 部署高性能向量数据库

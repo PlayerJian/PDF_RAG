@@ -4,7 +4,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Milvus
 
 # 加载 PDF 文档
-loader = PyPDFLoader('E:/Users/Python-菅荣孝简历.pdf')
+loader = PyPDFLoader('E:/Users/Python-简历.pdf')
 documents = loader.load()
 text_splitter = CharacterTextSplitter(
                                     separator="；",
@@ -21,7 +21,7 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-
 vectorstore = Milvus(
     embedding_function=embeddings,
     collection_name="pdf_test",  # 可以根据需要修改集合名称
-    connection_args={"host": "172.27.9.40", "port": "19530"},  # 本地 Milvus 服务的地址和端口
+    connection_args={"host": "", "port": "19530"},  # 本地 Milvus 服务的地址和端口
     drop_old = True,
     auto_id = True
 )
